@@ -1,0 +1,154 @@
+<TihorFruzsina_orarend>
+    <ora id="1" típus="elmélet">
+        <ora>Szoftvertesztelés</ora>
+        <idopont>
+            <nap>hétfő</nap>
+            <tol>8:00</tol>
+            <ig>12:00</ig>
+        </idopont>
+        <helyszin>In/103</helyszin>
+        <oktato>Dr. Hornyák Olivér</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </ora>
+    <ora id="2" típus="gyakorlat">
+        <ora>Szoftvertesztelés</ora>
+        <idopont>
+            <nap>hétfő</nap>
+            <tol>12:00</tol>
+            <ig>14:00</ig>
+        </idopont>
+        <helyszin>In/103</helyszin>
+        <oktato>Dr. Hornyák Olivér</oktato>
+        <szak>Mérnökinformatikus</szak>
+    </ora>
+    <ora id="3" típus="elmélet">
+        <idopont>
+            <ora>WEB technológiák</ora>
+            <idopont>
+                <nap>hétfő</nap>
+                <tol>14:00</tol>
+                <ig>16:00</ig>
+            </idopont>
+            <helyszin>XXX ea</helyszin>
+            <oktato>Agárdi Anita</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </idopont>
+    </ora>
+    <ora id="4" típus="gyakorlat">
+        <idopont>
+            <ora>WEB technológiák</ora>
+            <idopont>
+                <nap>hétfő</nap>
+                <tol>16:00</tol>
+                <ig>18:00</ig>
+            </idopont>
+            <helyszin>In/103</helyszin>
+            <oktato>Agárdi Anita</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </idopont>
+    </ora>
+    <ora id="5" típus="elmélet">
+        <idopont>
+            <ora>Mesterséges intelligencia</ora>
+            <idopont>
+                <nap>kedd</nap>
+                <tol>10:00</tol>
+                <ig>12:00</ig>
+            </idopont>
+            <helyszin>XXXII ea</helyszin>
+            <oktato>Kunné Dr. Tamás Judit</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </idopont>
+    </ora>
+    <ora id="6" típus="elmélet">
+        <idopont>
+            <ora>Adatkezelés XML-ben</ora>
+            <idopont>
+                <nap>kedd</nap>
+                <tol>12:00</tol>
+                <ig>14:00</ig>
+            </idopont>
+            <helyszin>XXXII ea</helyszin>
+            <oktato>Dr. Bednarik László</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </idopont>
+    </ora>
+    <ora id="7" típus="elmélet">
+        <idopont>
+            <ora>WEB-es alkalmazások Java</ora>
+            <idopont>
+                <nap>kedd</nap>
+                <tol>14:00</tol>
+                <ig>16:00</ig>
+            </idopont>
+            <helyszin>Teams</helyszin>
+            <oktato>EPAM</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </idopont>
+    </ora>
+    <ora id="8" típus="gyakorlat">
+        <idopont>
+            <ora>WEB-es alkalmazások Java</ora>
+            <idopont>
+                <nap>kedd</nap>
+                <tol>14:00</tol>
+                <ig>16:00</ig>
+            </idopont>
+            <helyszin>Teams</helyszin>
+            <oktato>EPAM</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </idopont>
+    </ora>
+    <ora id="9" típus="elmélet">
+        <idopont>
+            <ora>Integrált vállalati rendszerek</ora>
+            <idopont>
+                <nap>szerda</nap>
+                <tol>12:00</tol>
+                <ig>14:00</ig>
+            </idopont>
+            <helyszin>X ea</helyszin>
+            <oktato>Dr. Dadvandipour Samad</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </idopont>
+    </ora>
+    <ora id="10" típus="gyakorlat">
+        <idopont>
+            <ora>Adatkezelés XML-ben</ora>
+            <idopont>
+                <nap>szerda</nap>
+                <tol>14:00</tol>
+                <ig>16:00</ig>
+            </idopont>
+            <helyszin>Inf/103</helyszin>
+            <oktato>Dr. Bednarik László</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </idopont>
+    </ora>
+    <ora id="11" típus="gyakorlat">
+        <idopont>
+            <ora>Integrált vállalati rendszerek</ora>
+            <idopont>
+                <nap>szerda</nap>
+                <tol>14:00</tol>
+                <ig>16:00</ig>
+            </idopont>
+            <helyszin>Inf/15</helyszin>
+            <oktato>Kulcsárné Dr. Forrai Mónika</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </idopont>
+    </ora>
+    <ora id="12" típus="gyakorlat">
+        <idopont>
+            <ora>Mesterséges intelligencia</ora>
+            <idopont>
+                <nap>csütörtök</nap>
+                <tol>12:00</tol>
+                <ig>14:00</ig>
+            </idopont>
+            <helyszin>I A2 fsz</helyszin>
+            <oktato>Fazekas Levente</oktato>
+            <szak>Mérnökinformatikus</szak>
+        </idopont>
+    </ora>
+</TihorFruzsina_orarend>

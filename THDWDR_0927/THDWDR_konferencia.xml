@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<konferencia>
+    <cím>Konferencia címe</cím>
+    <hallgatók>
+        <hallgató>
+            <név>János Kovács</név>
+            <lakcím>Budapest, Kossuth u. 5.</lakcím>
+        </hallgató>
+        <hallgató>
+            <név>Mária Nagy</név>
+            <lakcím>Debrecen, Bajnai út 12.</lakcím>
+        </hallgató>
+        <!-- Itt folytatódik a további hallgatók felsorolása -->
+    </hallgatók>
+    <helyszín>Budapest Kongresszusi Központ</helyszín>
+    <előadó>
+        <név>Dr. Péter Szabó</név>
+        <adószám>123456789</adószám>
+        <lakcím>Budapest, Széchenyi tér 8.</lakcím>
+    </előadó>
+    <dátum>2023-10-15</dátum>
+</konferencia>
