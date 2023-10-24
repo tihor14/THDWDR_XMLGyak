@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE SzMmodell SYSTEM "THDWDR_ertodtd.dtd">
+<THDWDR_modell>
+    <A>
+        <a id=""></a>
+        <b>
+            <x></x>
+            <y></y>
+        </b>
+        <c>
+            <d></d>
+            <e></e>
+        </c>
+    </A>
+    <AB>
+        <c></c>
+    </AB>
+    <B>
+        <a id=""></a>
+        <b>
+            <x></x>
+            <y></y>
+        </b>
+    </B>
+    <C>
+        <a id=""></a>
+        <b></b>
+    </C>
+</THDWDR_modell>

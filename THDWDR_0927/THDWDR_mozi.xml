@@ -3,7 +3,7 @@
     <!ELEMENT mozi (film+)>
     <!ELEMENT film (rendezo+, szinesz+, iro+)>
     <!ATTLIST film id ID #REQUIRED>
-    <!ATTLIST film mufaj (horror|akció|vígjáték) "horror">
+    <!ATTLIST film mufaj (horror|akció|vígjáték) #REQUIRED>
     
     <!ELEMENT rendezo EMPTY>
     <!ATTLIST rendezo id ID #REQUIRED>
@@ -12,8 +12,9 @@
     <!ATTLIST szinesz id ID #REQUIRED>
     <!ATTLIST szinesz nev CDATA #IMPLIED>
     <!ELEMENT iro EMPTY>
-    <!ATTLIST iro ido ID #IMPLIED
-    ]>
+    <!ATTLIST iro ido ID #IMPLIED>
+    ]
+>
 <mozi>
     <film id="txn_nxm_2jb" mufaj="horror">
         <rendezo id="nzk_4xm_2jb" nev="alex"/>

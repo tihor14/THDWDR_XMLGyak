@@ -1,3 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TihorFruzsina_orarend [
+    <!ELEMENT TihorFruzsina_orarend (ora+)>
+    <!ELEMENT ora (targy, idopont, helyszin, oktato | oraado, szak)>
+        <!ELEMENT targy (#PCDATA)>
+        <!ELEMENT idopont (nap, tol, ig)>
+            <!ELEMENT nap (#PCDATA)>
+            <!ELEMENT tol (#PCDATA)>
+            <!ELEMENT ig (#PCDATA)>
+        <!ELEMENT helyszin (#PCDATA)>
+        <!ELEMENT oktato (#PCDATA)>
+        <!ELEMENT oraado (#PCDATA)>
+        <!ELEMENT szak (#PCDATA)>
+    <!ATTLIST ora id ID #REQUIRED
+                  típus (előadás|gyakorlat) #REQUIRED>
+]>
 <TihorFruzsina_orarend>
     <ora id="1" típus="elmélet">
         <targy>Szoftvertesztelés</targy>

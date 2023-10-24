@@ -1,0 +1,22 @@
+<!ELEMENT THDWDR_modell (A*,AB*,B*,C*)>
+    <!ELEMENT A (a,b,c)>
+        <!ELEMENT a (#PCDATA)>
+        <!ATTLIST a id ID #REQUIRED>
+        <!ELEMENT b (x,y)>
+            <!ELEMENT x (#PCDATA)>
+            <!ELEMENT y (#PCDATA)>
+        <!ELEMENT c (d,e)>
+            <!ELEMENT d (#PCDATA)>
+            <!ELEMENT e (#PCDATA)>
+    <!ELEMENT AB (c)>
+         <!ELEMENT c (#PCDATA)>  
+    <!ELEMENT B (a,b)>
+        <!ELEMENT a (#PCDATA)>
+        <!ATTLIST a id ID #REQUIRED>
+        <!ELEMENT b (x,y)>
+            <!ELEMENT x (#PCDATA)>
+            <!ELEMENT y (#PCDATA)>
+    <!ELEMENT C (a,b)>
+        <!ELEMENT a (#PCDATA)>
+        <!ATTLIST a id ID #REQUIRED>
+        <!ELEMENT b (#PCDATA)>
