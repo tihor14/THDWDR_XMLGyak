@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Fesztivál_THDWDR xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+  xs:noNamespaceSchemaLocation="XMLSchemaTHDWDR.xsd">
+    <Fesztivál FESZ_ID="1">
+        <név>Sziget</név>
+        <helyszín>Budapest</helyszín>
+        <év>2023</év>
+    </Fesztivál>   
+    <Tulajdonos T_ID="1" FESZ_T="1">
+        <név>Sziget Kft.</név>
+        <adószám>12345678</adószám>
+        <alapítás>1993</alapítás>
+        <bevétel>20000000</bevétel>
+    </Tulajdonos>
+    <Tulajdonos T_ID="2" FESZ_T="1">
+        <név>Szervező Kft.</név>
+        <adószám>87654321</adószám>
+        <alapítás>2000</alapítás>
+        <bevétel>15000000</bevétel>
+    </Tulajdonos>
+    <Fellépő FEL_ID="1" FEL_FESZ="1">
+        <név>Ed Sheeran</név>
+        <ország>Anglia</ország>
+        <díj>1000000</díj>
+    </Fellépő>
+    <Fellépő FEL_ID="2" FEL_FESZ="1">
+        <név>Billie Eilish</név>
+        <ország>USA</ország>
+        <díj>800000</díj>
+    </Fellépő>
+    <Nyelvtudás NY_ID="1">
+        <nyelv>Angol</nyelv>
+        <szint>Haladó</szint>
+    </Nyelvtudás>
+    <Nyelvtudás NY_ID="2">
+        <nyelv>Német</nyelv>
+        <szint>Kezdő</szint>
+    </Nyelvtudás>
+    <Közvélemény K_ID="11" K_Ny="1" K_R="55">
+        <kérdező>John Doe</kérdező>
+    </Közvélemény>
+    <Közvélemény K_ID="22" K_Ny="2" K_R="44">
+        <kérdező>Jane Smith</kérdező>
+    </Közvélemény>
+    <Résztvevő R_ID="55" FESZ_R="1">
+        <név>Peter Parker</név>
+        <diákigazolvány>ABC123</diákigazolvány>
+        <lakcím>
+            <település>New York</település>
+            <utca>Main Street</utca>
+            <házszám>10</házszám>
+        </lakcím>
+    </Résztvevő>
+    <Résztvevő R_ID="44" FESZ_R="1">
+        <név>Mary Jane</név>
+        <diákigazolvány>DEF456</diákigazolvány>
+        <lakcím>
+            <település>Budapest</település>
+            <utca>Kossuth Street</utca>
+            <házszám>5</házszám>
+        </lakcím>
+    </Résztvevő>
+    <Alkalmazott A_ID="1" B_A="1001">
+        <név>Joe Johnson</név>
+        <műszak>Déli</műszak>
+        <fizetés>2500</fizetés>
+    </Alkalmazott>
+    <Alkalmazott A_ID="2" B_A="2001">
+        <név>Lisa Scott</név>
+        <műszak>Éjszakai</műszak>
+        <fizetés>2200</fizetés>
+    </Alkalmazott>
+    <Bár B_ID="1001" FESZ_B="1">
+        <név>Szomjas Söröző</név>
+        <ital>Sör</ital>
+        <cég>Szomjas Kft.</cég>
+    </Bár>
+    <Bár B_ID="2001" FESZ_B="1">
+        <név>Fröccs Bár</név>
+        <ital>Fröccs</ital>
+        <cég>Piros-fehér Kft.</cég>
+    </Bár>
+
+    <Fesztivál FESZ_ID="2">
+        <név>Summerfest</nénév>
+        <helyszín>Chicago</helyszín>
+        <év>2023</év>
+    </Fesztivál>
+    <Tulajdonos T_ID="3" FESZ_T="2">
+        <név>Summerfest Management</név>
+        <adószám>98765432</adószám>
+        <alapítás>1990</alapítás>
+        <bevétel>18000000</bevétel>
+    </Tulajdonos>
+    <Tulajdonos T_ID="4" FESZ_T="2">
+        <név>Event Planning Inc.</név>
+        <adószám>23456789</adószám>
+        <alapítás>2005</alapítás>
+        <bevétel>12000000</bevétel>
+    </Tulajdonos>
+    <Fellépő FEL_ID="3" FEL_FESZ="2">
+        <név>Lady Gaga</név>
+        <ország>USA</ország>
+        <díj>1200000</díj>
+    </Fellépő>
+    <Fellépő FEL_ID="4" FEL_FESZ="2">
+        <név>Justin Timberlake</név>
+        <ország>USA</ország>
+        <díj>950000</díj>
+    </Fellépő>
+    <Nyelvtudás NY_ID="3">
+        <nyelv>Spanyol</nyelv>
+        <szint>Közép</szint>
+    </Nyelvtudás>
+    <Nyelvtudás NY_ID="4">
+        <nyelv>Olasz</nyelv>
+        <szint>Haladó</szint>
+    </Nyelvtudás>
+    <Közvélemény K_ID="33" K_Ny="5" K_R="4">
+        <kérdező>Michael Johnson</kérdező>
+    </Közvélemény>
+    <Közvélemény K_ID="44" K_Ny="4" K_R="3">
+        <kérdező>Laura Smith</kérdező>
+    </Közvélemény>
+    <Résztvevő R_ID="3" FESZ_R="2">
+        <név>Emma Watson</név>
+        <diákigazolvány>CDE789</diákigazolvány>
+        <lakcím>
+            <település>Los Angeles</település>
+            <utca>Sunset Blvd</utca>
+            <házszám>15</házszám>
+        </lakcím>
+    </Résztvevő>
+    <Résztvevő R_ID="4" FESZ_R="2">
+        <név>Chris Evans</név>
+        <diákigazolvány>EFG012</diákigazolvány>
+        <lakcím>
+            <település>Miami</település>
+            <utca>Beach Road</utca>
+            <házszám>20</házszám>
+        </lakcím>
+    </Résztvevő>
+    <Alkalmazott A_ID="3" B_A="3001">
+        <név>Amy Johnson</név>
+        <műszak>Déli</műszak>
+        <fizetés>2400</fizetés>
+    </Alkalmazott>
+    <Alkalmazott A_ID="4" B_A="4001">
+        <név>Kevin Scott</nénév>
+        <műszak>Éjszakai</műszak>
+        <fizetés>2100</fizetés>
+    </Alkalmazott>
+    <Bár B_ID="3001" FESZ_B="2">
+        <név>Party Central</név>
+        <ital>Koktél</ital>
+        <cég>Party Time Ltd.</cég>
+    </Bár>
+    <Bár B_ID="4001" FESZ_B="2">
+        <név>Lounge Bar</név>
+        <ital>Kávé</ital>
+        <cég>Relax Inc.</cég>
+    </Bár>
+
+</Fesztivál_THDWDR>
+
+    

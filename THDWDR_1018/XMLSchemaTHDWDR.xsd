@@ -1,0 +1,120 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="Fesztivál_THDWDR">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Fesztivál" maxOccurs="unbounded"/>
+                <xs:element ref="Tulajdonos" maxOccurs="unbounded"/>
+                <xs:element ref="Fellépő" maxOccurs="unbounded"/>
+                <xs:element ref="Nyelvtudás" maxOccurs="unbounded"/>
+                <xs:element ref="Közvélemény" maxOccurs="unbounded"/>
+                <xs:element ref="Résztvevő" maxOccurs="unbounded"/>
+                <xs:element ref="Alkalmazott" maxOccurs="unbounded"/>
+                <xs:element ref="Bár" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Fesztivál">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="név" type="xs:string"/>
+                <xs:element name="helyszín" type="xs:string"/>
+                <xs:element name="év" type="xs:integer"/>
+            </xs:sequence>
+            <xs:attribute name="FESZ_ID" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Tulajdonos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="név" type="xs:string"/>
+                <xs:element name="adószám" type="xs:string"/>
+                <xs:element name="alapítás" type="xs:integer"/>
+                <xs:element name="bevétel" type="xs:integer"/>
+            </xs:sequence>
+            <xs:attribute name="T_ID" type="xs:string"/>
+            <xs:attribute name="FESZ_T" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Fellépő">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="név" type="xs:string"/>
+                <xs:element name="ország" type="xs:string"/>
+                <xs:element name="díj" type="xs:integer"/>
+            </xs:sequence>
+            <xs:attribute name="FEL_ID" type="xs:string"/>
+            <xs:attribute name="FEL_FESZ" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Nyelvtudás">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nyelv" type="xs:string"/>
+                <xs:element name="szint" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="NY_ID" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Közvélemény">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="kérdező" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="K_ID" type="xs:string"/>
+            <xs:attribute name="K_Ny" type="xs:string"/>
+            <xs:attribute name="K_R" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Résztvevő">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="név" type="xs:string"/>
+                <xs:element name="diákigazolvány" type="xs:string"/>
+                <xs:element name="lakcím">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="település" type="xs:string"/>
+                            <xs:element name="utca" type="xs:string"/>
+                            <xs:element name="házszám" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="R_ID" type="xs:string"/>
+            <xs:attribute name="FESZ_R" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Alkalmazott">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="név" type="xs:string"/>
+                <xs:element name="műszak" type="xs:string"/>
+                <xs:element name="fizetés" type="xs:integer"/>
+            </xs:sequence>
+            <xs:attribute name="A_ID" type="xs:string"/>
+            <xs:attribute name="B_A" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Bár">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="név" type="xs:string"/>
+                <xs:element name="ital" type="xs:string"/>
+                <xs:element name="cég" type="xs:string"/>
+            </xs:sequence>
+            <xs:attribute name="B_ID" type="xs:string"/>
+            <xs:attribute name="FESZ_B" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+    
+</xs:schema>
