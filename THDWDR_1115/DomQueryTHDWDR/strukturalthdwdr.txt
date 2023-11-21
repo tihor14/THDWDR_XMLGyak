@@ -1,0 +1,13 @@
+Node neve: hallgato
+  Node tartalma: 
+        Tihor Fruzsina
+        2003-01-14
+        Mérnökinformatikus
+    
+  Node neve: hnev
+    Node tartalma: Tihor Fruzsina
+  Node neve: szulev
+    Node tartalma: 2003-01-14
+  Node neve: szak
+    Attribútum: evf, Érték: 3
+    Node tartalma: Mérnökinformatikus

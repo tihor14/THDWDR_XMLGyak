@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><THDWDR_kurzusfelvetel egyetem="ME" tanev="2023/2024">
+    <hallgato>
+        <hnev>Tihor Fruzsina</hnev>
+        <szulev>2003-01-14</szulev>
+        <szak evf="3">Mérnökinformatikus</szak>
+    </hallgato>
+    <kurzusok>
+        <kurzus id="THDWDR" jovahagyas="igen" nyelv="német">
+            <kurzusnev>Szoftvertesztelés</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf/103</hely>
+            <idopont>Hétfő 10-12</idopont>
+            <oktato>Dr. Hornyák Olivér</oktato>
+        <oraado>Új óraadó</oraado></kurzus>
+        <kurzus id="THDWDR" nyelv="német">
+            <kurzusnev>WEB technológiák1</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf/101</hely>
+            <idopont>Hétfő 14-16</idopont>
+            <oktato>Agárdi Anita</oktato>
+        <oraado>Új óraadó</oraado></kurzus>
+        <kurzus id="THDWDR" nyelv="német">
+            <kurzusnev>Mesterséges intelligencia</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII ea</hely>
+            <idopont>Kedd 10-12</idopont>
+            <oktato>Dr. Kunné Tamás Judit</oktato>
+            <oraado>Fazekas Levente</oraado>
+        </kurzus>
+        <kurzus id="THDWDR" nyelv="német">
+            <kurzusnev>Adatkezelés XML-ben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII ea</hely>
+            <idopont>Kedd 12-14</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+        <oraado>Új óraadó</oraado></kurzus>
+         <kurzus id="THDWDR" nyelv="német">
+            <kurzusnev>WEB-es alkalmazások Java</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Teams</hely>
+            <idopont>Szerda 14-16</idopont>
+            <oktato>Selmeci Viktor</oktato>
+        <oraado>Új óraadó</oraado></kurzus>
+        <kurzus id="THDWDR" nyelv="német">
+            <kurzusnev>Integrált vállalati rendszerek</kurzusnev>
+            <kredit>5</kredit>
+            <hely>X ea</hely>
+            <idopont>Szerda 12-14</idopont>
+            <oktato>Dr. Samad Dadvandipour</oktato>
+        <oraado>Új óraadó</oraado></kurzus>
+    <kurzus id="THDWDR" nyelv="német"><kurzusnev>Programozás fakultáció</kurzusnev><kredit>10</kredit><hely>E/4 kollégium</hely><idopont>Péntek 8-10</idopont><oktato>Teszt Elek</oktato></kurzus></kurzusok>
+    
+</THDWDR_kurzusfelvetel>
