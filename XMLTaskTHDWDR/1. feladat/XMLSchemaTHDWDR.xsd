@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Egyszerű típusok definiálása -->
+    <xs:simpleType name="stringArray">
+        <xs:list itemType="xs:string"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="dateType">
+        <xs:restriction base="xs:date"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="TAJType">
+        <xs:restriction base="xs:string">
+            <xs:length value="9"/>
+            <xs:pattern value="[0-9]{9}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Komplex típusok definiálása -->
+    <xs:complexType name="AddressType">
+        <xs:sequence>
+            <xs:element name="PostalCode" type="xs:string"/>
+            <xs:element name="City" type="xs:string"/>
+            <xs:element name="Street" type="xs:string"/>
+            <xs:element name="HouseNumber" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="PatientType">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:integer"/>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="DateOfBirth" type="dateType"/>
+            <xs:element name="Age" type="xs:integer"/>
+            <xs:element name="Address" type="AddressType"/>
+            <xs:element name="TAJ" type="TAJType"/>
+            <xs:element name="PhoneNumber" type="stringArray"/>
+            <xs:element name="Email" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="DoctorType">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:integer"/>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Address" type="xs:string"/>
+            <xs:element name="PhoneNumber" type="stringArray"/>
+            <xs:element name="Email" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="DepartmentType">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:integer"/>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Location" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="MedicineType">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Description" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="DiseaseType">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Symptom" type="xs:string"/>
+            <xs:element name="AffectedOrgans" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="SufferingType">
+        <xs:sequence>
+            <xs:element name="DiseaseID" type="xs:integer"/>
+            <xs:element name="PatientID" type="xs:integer"/>
+            <xs:element name="FromWhen" type="dateType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="EffectiveType">
+        <xs:sequence>
+            <xs:element name="DiseaseID" type="xs:integer"/>
+            <xs:element name="MedicineName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TreatsType">
+        <xs:sequence>
+            <xs:element name="DoctorID" type="xs:integer"/>
+            <xs:element name="PatientID" type="xs:integer"/>
+            <xs:element name="FromWhen" type="dateType"/>
+            <xs:element name="HowLong" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="WorkingType">
+        <xs:sequence>
+            <xs:element name="DoctorID" type="xs:integer"/>
+            <xs:element name="DepartmentID" type="xs:integer"/>
+            <xs:element name="Leads" type="boolType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Gyökérelemtől az elemek felhasználása -->
+    <xs:element name="THDWDR_kórház">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Entities -->
+                <xs:element name="Patient" type="PatientType" minOccurs="3" maxOccurs="unbounded"/>
+                <xs:element name="Doctor" type="DoctorType" minOccurs="3" maxOccurs="unbounded"/>
+                <xs:element name="Department" type="DepartmentType" minOccurs="3" maxOccurs="unbounded"/>
+                <xs:element name="Medicine" type="MedicineType" minOccurs="3" maxOccurs="unbounded"/>
+                <xs:element name="Disease" type="DiseaseType" minOccurs="3" maxOccurs="unbounded"/>
+
+                <!-- Relationships -->
+                <xs:element name="Suffering" type="SufferingType" minOccurs="3" maxOccurs="unbounded"/>
+                <xs:element name="Effective" type="EffectiveType" minOccurs="3" maxOccurs="unbounded"/>
+                <xs:element name="Treats" type="TreatsType" minOccurs="3" maxOccurs="unbounded"/>
+                <xs:element name="Working" type="WorkingType" minOccurs="3" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
